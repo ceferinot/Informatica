@@ -1,0 +1,26 @@
+{% block body %}
+<!-- Site wrapper -->
+<div class="wrapper">
+    {% include 'header.html' %}
+  
+    {% include 'siderBar.html' %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      {% block  content %}
+      {% endblock %}
+      
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+  
+    {% include 'footer.html' %}
+  
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+  {% endblock %}
